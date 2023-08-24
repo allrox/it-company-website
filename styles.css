@@ -8,14 +8,35 @@ body {
 }
 
 section {
-    padding: 3rem 0;
+    padding: 4rem 0;
+}
+
+.secondary_background {
+    background: #141c41;
+    padding: 4rem 0;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.checked_list li {
+    list-style-image: url(img/verificar.png);
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 .slider {
     padding: 150px 0;
     position: relative;
     border-bottom: solid 2px #ffffff;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .slider::before {
@@ -46,9 +67,7 @@ section {
     border: solid 2px #7696ff;
     background: linear-gradient(146deg, rgba(219,93,186,1) 26%, rgba(81,69,195,1) 70%);  
     box-shadow: 0 0 20px #619dec;
-
 }
-
 
 .slider-inside {
     position: relative;
@@ -92,9 +111,33 @@ section {
     font-weight: 100 !important;
 }
 
+.watch_video p{
+    font-size:13px;
+    text-transform: uppercase;
+}
+
+.watch_video span{
+    font-size:18px !important;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.subtitle_section {
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.colored_title {
+    background: #FF00CC;
+    background: linear-gradient(to right, #FF00CC 0%, #00E5FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .grid_home {
     display: grid;
     max-width: 100%;
+    color: #ffffff;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(2, 50%);
     column-gap: var(--grid-gap);
@@ -106,7 +149,7 @@ section {
     padding:var(--grid-padding);
     grid-column: 1;
     grid-row: 1 / span 2;
-    background: #fefefe;
+    background: linear-gradient(155deg, rgba(255,22,205,1) 0%, rgba(25,120,255,1) 100%);
     border-radius: 15px;
 }
 
@@ -114,7 +157,8 @@ section {
     padding:var(--grid-padding);
     grid-column: 2/2;
     grid-row: 1/1;
-    background: #fefefe;
+    background: linear-gradient(155deg, rgba(255,22,87,1) 0%, rgba(140,11,47,1) 100%);
+
     border-radius: 15px;
 }
 
@@ -122,7 +166,7 @@ section {
     padding:var(--grid-padding);
     grid-column: 2;
     grid-row: 2/2;
-    background: #fefefe;
+    background: linear-gradient(155deg, rgba(33,129,255,1) 0%, rgba(22,35,121,1) 100%);
     border-radius: 15px;
 }
 
@@ -130,8 +174,16 @@ section {
     padding:var(--grid-padding);
     grid-column: 3/3;
     grid-row: 1/ span 2;
-    background: #fefefe;
+    background: linear-gradient(155deg, rgba(34,99,214,1) 0%, rgba(26,33,80,1) 100%);
     border-radius: 15px;
+}
+
+.img_server{
+    background: url(img/server.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 2rem;
 }
 
 .card_feature {
@@ -156,7 +208,6 @@ section {
     margin: 80px 15px 0 0;
 }
 
-
 .card_how_it_works:last-child {
     margin-right: 0;
 }
@@ -172,6 +223,20 @@ section {
     background: #934c99;
     width: 70px;
     height: 70px;
+}
+
+.grid_home h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.grid_home p {
+    font-size: .8rem;
+}
+
+.image_base_about {
+    background
 }
 
 @media (max-width: 700px) {
